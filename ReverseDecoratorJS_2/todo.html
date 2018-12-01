@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Reverse Decorator ToDo Example</title>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+        <script src="todoAdd.js"></script>
+        <script src="todo.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                    <h1>Stuff To Do</h1>
+            </div>
+                <div class="row m-4">
+                        <div class="input-group mb-3">
+                                
+                                <input type="date" class="form-control" id="dtAddDueDate" />
+                                <input type="text" class="form-control" id="txtAddTask" />
+                                <div class="input-group-postpend">
+                                        <button type="button" class="btn btn-primary" onclick="addToDo()">Add</button>
+                                    </div>
+                            </div>
+                </div>
+                
+                
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                                <tr>
+                                    <th>Done</th>
+                                    <th>Due Date</th>
+                                    <th>Task</th>
+                                </tr>
+                        </thead>
+        
+                        <tbody id="tblBody">
+        
+                        </tbody>
+        
+                    </table>
+                </div>
+        </div>
+
+    </body>
+</html>
